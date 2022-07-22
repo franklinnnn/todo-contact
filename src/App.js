@@ -3,6 +3,7 @@ import { Switch, Route, Redirect, NavLink } from "react-router-dom";
 
 import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage";
 import { ContactsPage } from "./containers/contactsPage/ContactsPage";
+import { TodosPage } from "./containers/todosPage/TodosPage";
 
 function App() {
   const [appointments, setAppointments] = useState([]);
@@ -11,6 +12,7 @@ function App() {
   const ROUTES = {
     CONTACTS: "/contacts",
     APPOINTMENTS: "/appointments",
+    TODOS: "/todos"
   };
 
   const addAppointment = (title, contact, date, time) => {
@@ -48,6 +50,9 @@ function App() {
         <NavLink to={ROUTES.APPOINTMENTS} activeClassName="active">
           Appointments
         </NavLink>
+        <NavLink to={ROUTES.TODOS} activeClassName="active">
+          To Do's
+        </NavLink>
       </nav>
       <main>
         <Switch>
@@ -63,6 +68,9 @@ function App() {
               addAppointment={addAppointment}
               contacts={contacts}
             />
+          </Route>
+          <Route path={ROUTES.TODOS}>
+            <TodosPage />
           </Route>
         </Switch>
       </main>

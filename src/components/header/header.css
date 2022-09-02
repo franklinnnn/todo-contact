@@ -1,0 +1,41 @@
+nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+}
+
+.header-title {
+  color: #fff;
+  padding: 0.6rem;
+  font-weight: 600;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  margin-bottom: 0.6rem;
+  padding: 0.4rem;
+}
+
+nav ul li a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  text-indent: 0.6rem;
+  padding: 0.2rem;
+  color: #adacb5;
+  font-weight: 600;
+  transition: ease-in-out 0.2s;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+.active {
+  color: #fff;
+  background-color: rgba(54, 65, 86, 0.2);
+  border-radius: 4px;
+}

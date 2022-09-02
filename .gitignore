@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+<<<<<<< HEAD
+=======
+
+*.drawio
+>>>>>>> b8ad17b2a7623a889462115600b14a4f1826f69b

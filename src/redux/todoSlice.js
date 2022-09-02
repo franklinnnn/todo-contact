@@ -47,3 +47,4 @@ export const { addTodo, toggleComplete, editTodo, deleteTodo } =
   todoSlice.actions;
 
 export default todoSlice.reducer;
+
